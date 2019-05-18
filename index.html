@@ -8,9 +8,12 @@
  <header class="main-header">
   <a  class="main-header-logo">
   <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»"></a>
-<div class="search">Поиск <!-- form --> </div>   
-     <a><span class="flags"> Закладки </span></a>  
-     <a> <span class="user-basket"> Корзина </span></a>
+<div class="search">
+     <label class="hidden" for="search">Поиск</label>
+     <form action="#" method="post"><input type="search" name="search" id="search" placeholder="Поиск"></form>
+     </div>   
+     <a href="#"><span class="flags"> Закладки </span></a>  
+     <a href="#"> <span class="user-basket"> Корзина </span></a>
   <a href="№"><span class="get-order">Оформить заказ</span></a>
   <h1>Интернет-магазин
 строительных материалов
@@ -173,8 +176,9 @@ BFG 2000</h3>
               
        <!--Конец -->
        <section class="technomart-info">
+          <h2 class="hidden">Информационный блог о компании "Техномарт"</h2>
            <section class="about-us">
-               <h2> КОМПАНИЯ «Техномарт»</h2>
+               <h3> КОМПАНИЯ «Техномарт»</h3>
               
 
                <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -189,7 +193,7 @@ BFG 2000</h3>
     <a href="#"><span class="more-details">Подробние</span></a>
 	 </section>
            <section class="contacts">
-               <h2>Контакты</h2>
+               <h3>Контакты</h3>
                <p>Вы можете забрать товар сами, 
                  заехав в наш офис:</p>
                  <img src=img/map-small.jpg width="300" height="158" alt="Навигация">
@@ -241,12 +245,24 @@ BFG 2000</h3>
    </footer>
    <section class="pop-up-forms">
       <h2 class="hddeen">Связаться с нами !</h2>
-       <!-- forms -->
-       <span class="close-pop-up">x</span>
+       <form action="#" method="post">
+           <label for="name-field">Ваше имя:</label>
+           <input type="text" name="text" id="name-field" placeholder="Имя фамилия" required>
+           <label for="email-field">Ваш e-mail:</label>
+           <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+           <span >Текст письма:</span>
+            <!-- вместо cols and rows будет СSS width:460px; height:114; -->
+           <textarea class="pop-up-message" cols="50" rows="10">
+            В свободной форме
+           </textarea>
+           <button class="pop-up-submit" type="submit">Отправить</button>
+       </form>
+       <button class="close-pop-up" type="button">Закрыть</button>
    </section>
    <section class="pop-up-map">
        <h2 class="hddeen">Карта</h2>
-       <span class="close-pop-up">x</span>
+       <p><img src="img/map-big.jpg" alt="Офис компании по алресу ул. Большая Канюшенная 19/8, Санкт-Питербург" width="940" height="446"></p>
+       <button class="close-pop-up" type="button">Закрыть</button>
    </section>
   </body>
 </html>
