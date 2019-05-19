@@ -48,20 +48,20 @@
     <h1>Перфораторы</h1>
       <section class="filters">
           <h2 class="hidden">Фильтры</h2>
+           <form class="range-filter" action="#" method="post" oninput="a.value=leftThumb.value; b.value = rightThumb.value">  
           <h3>ЦЕНА:</h3>  
           <div class="range">
-          <form class="range-filter" action="#" method="post" oninput="a.value=leftThumb.value; b.value = rightThumb.value">  
-           <input class="range-left" type="range" name="leftThumb" id="left-thumb" min="0" max="2950" step="50" value="0">
-           <label class="hidden min" for="left-thumb">Минимальное значение</label>
-            <input class="range-right" type="range" name="rightThumb" id="right-thumb" min="50" max="3000" step="50" value="3000">
-              <label class="hidden max" for="left-thumb">Максимальное значение</label>
-             <output class="a" name="a">0</output>
-              <output class="b" name="b">3000</output>
-            </form>
+          <input class="range-left" type="range" name="leftThumb" id="left-thumb" min="0" max="2950" step="50" value="0">
+         <label class="hidden min" for="left-thumb">Минимальное значение</label>
+        <input class="range-right" type="range" name="rightThumb" id="right-thumb" min="50" max="3000" step="50" value="3000">
+        <label class="hidden max" for="left-thumb">Максимальное значение</label>
+        <output class="a" name="a">0</output>
+        <output class="b" name="b">3000</output>
+            
          </div>
        
           <h3>Производители:</h3>
-          <form action="#" method="post">
+         
           <ul class="producer">
               <li class="current-producer">
               <input type="checkbox" name="bosh" id="producer-1" checked>
