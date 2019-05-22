@@ -2,25 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/main.css">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+  
  <header class="main-header">
-  <a  class="main-header-logo">
-  <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»"></a>
+ 
+ <div class="top-header">
+  <a href="#" class="main-header-logo">
+  <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»" width="108" height="18"></a>
 <div class="search">
      <label class="hidden" for="search">Поиск</label>
-     <form action="#" method="post"><input type="search" name="search" id="search" placeholder="Поиск"></form>
+     <form action="#" method="post"><input type="search" name="search" id="search" placeholder="Поиск:"></form>
      </div>   
-     <a href="#"><span class="flags"> Закладки </span></a>  
-     <a href="#"> <span class="user-basket"> Корзина </span></a>
-  <a href="#"><span class="get-order">Оформить заказ</span></a>
+     <span class="flags"><a href="#"> Закладки: 0</a></span>  
+     <span class="user-basket"><a href="#">Корзина: 0</a></span>
+     <span class="get-order"><a href="#">Оформить заказ</a></span>
+  </div>
+  
+  <div class="bottom-header">
   <h1>Интернет-магазин
 строительных материалов
 и инструментов для ремонта </h1>
       <p class="adress"><span class="phone">+7 (812) 555-05-55<br></span>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <ul class="user-date">
+      <ul class="user-data">
           <li class="entrance"><a href="#">Войти</a></li>
           <li><a href="#">Регистрация</a></li>
       </ul>
@@ -35,6 +44,8 @@
               <li><a href="#">Контакты</a></li>
           </ul>
       </nav>
+     </div>
+     
   </header>   
    <main class="main-container">
       <!-- Добавил секции контейнера main -->
@@ -202,7 +213,7 @@ BFG 2000</h3>
 Залезть в долговую яму стало проще! 
 Кредитные консультанты придут вам на помощь.</p>
              
-               <a href="#"><span>ОТПРАВИТЬ ЗАЯВКУ</span></a>
+               <a href="#" class="button"><span>ОТПРАВИТЬ ЗАЯВКУ</span></a>
                  </dd>
            </dl>
        </section>
@@ -224,21 +235,21 @@ BFG 2000</h3>
         <li class="environment-list"><strong>Автотрейдинг</strong></li>
         <li class="environment-list"><strong>ЖелДорЭкспедиция</strong></li>
     </ul>
-    <a href="#"><span class="more-details">Подробние</span></a>
+    <a href="#" class="button"><span>Подробние</span></a>
 	 </section>
            <section class="contacts">
                <h3>Контакты</h3>
                <p>Вы можете забрать товар сами, 
                  заехав в наш офис:</p>
                  <img src=img/map-small.jpg width="300" height="158" alt="Навигация">
-                 <span class="button"><a href="#">Заблудились? НапиШИТЕ НАМ!</a></span>
+               <a class="button" href="#"> <span>Заблудились? НапиШИТЕ НАМ!</span></a> 
            </section>
        </section>
    </main>
    <footer class="main-footer">
-       <div class="footer-middle-top">
+       <div class="footer-part-top">
         <a  class="main-header-logo">
-        <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»"></a>
+        <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»" width="108" height="18"></a>
        <p class="adress">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
@@ -268,12 +279,12 @@ BFG 2000</h3>
         </ul>
       </div>
        <p class="footer-copyright">
-        <b>Обратная связь:</b> 
-        <a class="button" href="https://mail@htmlacademy.ru">Mail HTML Academy</a>
+        Обратная связь: 
+        <a href="https://mail@htmlacademy.ru">Mail HTML Academy</a>
       </p>
-      <p>
-       <b>Разработано:</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <p class="footer-copyright">
+       Разработано: 
+        <a href="https://htmlacademy.ru">HTML Academy</a>
       </p>
        </div>
    </footer>
@@ -289,14 +300,14 @@ BFG 2000</h3>
            <textarea class="pop-up-message" cols="50" rows="10">
             В свободной форме
            </textarea>
-           <button class="pop-up-submit" type="submit">Отправить</button>
+           <button class=" button pop-up-submit" type="submit">Отправить</button>
        </form>
-       <button class="close-pop-up" type="button">Закрыть</button>
+       <button class="button close-pop-up" type="button">Закрыть</button>
    </section>
    <section class="pop-up-map">
        <h2 class="hddeen">Карта</h2>
        <p><img src="img/map-big.jpg" alt="Офис компании по алресу ул. Большая Канюшенная 19/8, Санкт-Питербург" width="940" height="446"></p>
-       <button class="close-pop-up" type="button">Закрыть</button>
+       <button class=" button close-pop-up" type="button">Закрыть</button>
    </section>
   </body>
 </html>
