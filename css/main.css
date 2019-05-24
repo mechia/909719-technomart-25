@@ -139,7 +139,146 @@ a {
 }
 /*HEADER ENDING*/
 /*MAIN BEGIN*/
-/*SECTION TECHNOMART-INFO BEGIN*/
+/*SECTION SLIDERS BEGIN*/
+.service {
+    list-style:none;
+}
+.service h3 {
+    font-size:24px;
+    line-height: 30px;
+    color:#ffffff;
+    
+}
+.materials h3 {
+    background-color: #ffbf47;
+} 
+.tools h3 {
+    background-color: #ffbf47;
+}
+.equipment h3 {
+    background-color: #dc91d8;
+}
+.discount h3 {
+    background-color: #8ed78f;
+}
+.delivery h3 {
+    background-color: #ffc047;
+}
+.sliders-button {
+    font-size:14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:#ffffff;
+    
+    background-color: rgba(0, 0, 0, .1);
+}
+.sliders-button:hover,
+.sliders-button:focus {
+    background-color: rgba(0, 0, 0, .2);
+}
+.sliders-button:active {
+    background-color: rgba(0, 0, 0, .3);
+}
+.sliders-list {
+    list-style: none;
+}
+
+.slider-header {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#ffffff;
+    
+    background-color: rgba(0, 0, 0, .1);
+}
+.slider-description {
+    font-size: 18px;
+    line-height: 24px;
+     color:#ffffff;
+    
+    background-color: rgba(0, 0, 0, .1);
+}
+/*SECTION SLIDERS ENDING*/
+
+/*SECTION POPULAR BEGIN*/
+.popular {
+ font-family: "Cuprum", Arial, sans-serif;
+}
+.popular h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:#32425c;
+    
+    background-color: #f9f5f0;
+}
+.popular  .catalog-list {
+    font-family: "PT Sans", Arail, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+}
+/*SECTION POPULAR ENDING*/
+
+/*SECTION BRANDS-BLOCK BEGIN*/
+.brands-block h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+    
+    background-color: #f9f5f0;
+}
+.brands {
+    list-style: none;
+}
+.brands-items  {
+    border: solid 1px #e5e5e5;
+}
+.brands-items:hover,
+.brands-items:focus {
+    box-shadow: 0 10px 25px rgba(41,52,73,.5);
+	}
+.brands-items:active {
+    box-shadow: 0 4px 10px rgba(41,52,73,.5);
+    opacity: .6;
+}
+/*SECTION BRANDS-BLOCK ENDING*/
+
+/*SECTION SERVICES BEGIN*/
+.services {
+    font-size: 13px;
+    line-height: 24px;
+    color:#000000;
+    
+    background-color: #f4f7f9;
+}
+.services h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:#000000;
+    
+    background-color: #f4f7f9;
+}
+.advantage-items {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32425c;
+    
+    background-color: #f4f7f9;
+}
+.advantage label {
+    font-size: 21px;
+    line-height: 30px;
+    color:#32425c;
+}
+/*SECTION SERVICES ENDING*/
+
+/*SECTION TECHNOMART-INFO BEGIN AND BUTTONS*/
 .technomart-info {
   font-family: "PT Sans", Arail, sans-serif;
   font-size: 13px;
@@ -151,7 +290,11 @@ a {
 .technomart-info h3 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     text-transform: uppercase;
+    color:#000000;
+    
+    background-color: #ffffff;
 }
 .environment {
  font-family: "Cuprum", Arial, sans-serif;
@@ -165,6 +308,7 @@ a {
  line-height: 18px;
  color:#ffffff;    
  text-align: center;
+ text-transform: uppercase;
     
  background-color: #ee3643;    
      
@@ -176,9 +320,10 @@ a {
 .button:active {
     background-color: #ba2732;
 }
+
+/*SECTION TECHNOMART ENDING*/
 /*HEADER CATALOG BEGIN*/
 
-/*HEADER CATALOG ENDING*/
 .current-user {
     font-size: 21px;
     line-height: 21px;
@@ -208,7 +353,8 @@ a {
 .current-user:active {
     color:rgba(0, 0, 0, .3);
 }
-/*TECHNOMART-INFO ENDING*/
+/*HEADER CATALOG ENDING*/
+
 
 /*CATALOG MAIN BEGIN*/
 .breadcrumbs {
@@ -236,6 +382,7 @@ a {
 .container h2 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     color: #32425c;
     
     background-color: #f2f6f8;
@@ -248,6 +395,7 @@ a {
 .filters h3 {
     font-size: 13px;
     line-height: 18px;
+    font-weight: normal;
     color:#000000;
     
     background-color: #ffffff;
@@ -277,6 +425,7 @@ a {
 .sort  {
     font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
     color:#000000;
     
     background-color: #f7f3ec;
@@ -315,17 +464,38 @@ a {
 .catalog-list {
     list-style: none;
 }
+.catalog-item h4,
+.catalog-item h3 { 
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: none;
+}
 .catalog-item {
     border: solid 1px #e5e5e5;
-
+}
+.last-price,
+.current {
+    font-size: 17px;
+    line-height: 18px;
+}
+.last-price {
+    color:#999999;
 }
 .catalog-item:hover,
 .catalog-item:focus {
     box-shadow: 0 10px 25px rgba(41,52,73,.5);
 	
 }
+.buy,
+.add {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    
+}
 .buy a {
- color:#ffffff;
+    color:#ffffff;
     
     background-color: #63a63e;
 }
@@ -388,6 +558,7 @@ a {
 .about-product h3 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     color:#000000;
     text-transform: uppercase;
     
@@ -456,10 +627,16 @@ background-color: #32425c;
 .social-button:active {
     background-color: #ee3643;
 }
+.footer-copyright {
+    font-size: 16px;
+    line-height: 18px;
+    
+}
 .footer-copyright  a {
     color:#ffd180;
+    text-transform: none;
     
-     background-color: #293449;
+    background-color: #293449;
 }
 .footer-copyright  a:hover,
 .footer-copyright  a:focus {
@@ -496,6 +673,7 @@ box-shadow: 0 20px 40px rgba(41,52,73,.75);
 .shop-pop-up {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     color:#000000;
     
     background-color: #ffffff;    

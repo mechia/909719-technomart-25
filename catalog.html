@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>HTML Academy: Техномарт</title>
@@ -57,7 +58,8 @@
       <section class="filters">
           <h3>Фильтр</h3>
            <form class="range-filter" action="#" method="post" oninput="a.value=leftThumb.value; b.value = rightThumb.value">  
-          <h4>ЦЕНА:</h4>  
+          <h4>ЦЕНА:</h4> 
+           
           <div class="range">
           <input class="range-left" type="range" name="leftThumb" id="left-thumb" min="0" max="2950" step="50" value="0">
          <label class="hidden min" for="left-thumb">Минимальное значение</label>
@@ -65,8 +67,7 @@
         <label class="hidden max" for="left-thumb">Максимальное значение</label>
         <output class="a" name="a">0</output>
         <output class="b" name="b">3000</output>
-            
-         </div>
+            </div>
        
           <h4>Производители:</h4>
          
@@ -100,8 +101,8 @@
           <button class="button" type="submit">Показать</button>
           </form>
       </section>
+      
       <section class="catalog">
-         <!-- Добавил table -->
          <table class="sort">
              <tr>
                  <td>СОРТИРОВКА:</td>
@@ -117,7 +118,7 @@
           <h3 class="hidden">Список товаров</h3>
           <ul class="catalog-list">
              
-              <li class="catalog-item">
+                 <li class="catalog-item">
                   <h4>Перфоратор BOSCH BFG 3000</h4>
             <img src="img/goods-1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
              <div class="cards">
@@ -125,8 +126,8 @@
                  <span class="add"><a href="#">В закладки </a></span>
                       </div>
              <p class="price">
-                 <span class="last-price"><del>22500 p</del></span>
-                 <span class="current"><b>15 500 p</b></span></p>
+                 <span class="last-price"><del>22500 p.</del></span>
+                 <span class="current"><b>15 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item">
@@ -137,8 +138,8 @@
                  <span class="add"><a href="#">В закладки </a></span>
                       </div>  
              <p class="price">
-             <span class="last-price"><del>30500 p</del></span>
-                 <span class="current"><b>25 500 p</b></span></p>
+             <span class="last-price"><del>30500 p.</del></span>
+                 <span class="current"><b>25 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item new-goods">
@@ -150,7 +151,7 @@
                       </div>
               <p class="price">
              <span class="last-price"><del></del></span>
-                  <span class="current"><b>12 500 p</b></span></p>
+                  <span class="current"><b>12 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item">
@@ -161,20 +162,20 @@
                  <span class="add"><a href="#">В закладки </a></span>
                       </div> 
                        <p class="price">
-                  <span class="last-price"><del>22500 p</del></span>
-                  <span class="current"><b>15 500 p</b></span></p>
+                  <span class="last-price"><del>22500 p.</del></span>
+                  <span class="current"><b>15 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item new-goods">
-                  <h3>Перфоратор BOSCH BFG 6000</h3>
+                  <h4>Перфоратор BOSCH BFG 6000</h4>
                        <img src="img/goods-5.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                         <div class="cards">
                       <span class="buy"><a href="#">Купить</a></span>
                  <span class="add"><a href="#">В закладки </a></span>
                       </div>  
             <p class="price">
-                <span class="last-price"><del>30500 p</del></span>
-                <span class="current"><b>25 000 p</b></span></p>
+                <span class="last-price"><del>30500 p.</del></span>
+                <span class="current"><b>25 000 p.</b></span></p>
               </li>
               
               <li class="catalog-item">
@@ -186,7 +187,7 @@
                       </div>
               <p class="price">
              <span class="last-price"><del></del></span>
-                  <span class="current"><b>12 500 p</b></span></p>
+                  <span class="current"><b>12 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item new-goods">
@@ -197,7 +198,7 @@
                  <span class="add"><a href="#">В закладки </a></span>
                       </div>
               <p class="price">
-             <span class="last-price"><del>22500 p</del></span>
+             <span class="last-price"><del>22500 p.</del></span>
                   <span class="current"><b>15 500 p</b></span></p>
               </li>
               
@@ -209,8 +210,8 @@
                  <span class="add"><a href="#">В закладки </a></span>
                       </div>
             <p class="price">
-             <span class="last-price"><del>30500 p</del></span>
-                <span class="current"><b>25 500 p</b></span></p>
+             <span class="last-price"><del>30500 p.</del></span>
+                <span class="current"><b>25 500 p.</b></span></p>
               </li>
               
               <li class="catalog-item">
@@ -222,7 +223,7 @@
                       </div>
             <p class="price">
              <span class="last-price"><del></del></span>
-                <span class="current"><b>12 500 p</b></span></p>
+                <span class="current"><b>12 500 p.</b></span></p>
              </li>
              
           </ul>
@@ -274,11 +275,11 @@
       </div>
        <p class="footer-copyright">
         Обратная связь: 
-        <a class="button" href="https://mail@htmlacademy.ru">Mail HTML Academy</a>
+        <a class="button" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-copyright">
        Разработано: 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </p>
        </div>
    </footer>
