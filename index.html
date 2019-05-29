@@ -21,9 +21,16 @@
      <label class="hidden" for="search">Поиск</label>
      <form action="#" method="post"><input type="search" name="search" id="search" placeholder="Поиск:"></form>
      </div>   
-     <span class="flags"><a href="#"> Закладки: 0</a></span>  
-     <span class="user-basket"><a href="#">Корзина: 0</a></span>
-     <span class="get-order"><a href="#">Оформить заказ</a></span>
+     <div class="user-option">
+    
+        <span class="flags"><a href="#"> Закладки: 0</a></span>  
+
+         <span class="user-basket"><a href="#">Корзина: 0</a></span>
+       <span class="get-order"><a href="#">Оформить заказ</a></span>
+       
+  
+     
+  </div>
   </div>
   </div>
   </div>
@@ -60,58 +67,58 @@
        <section class="sliders wrapper">
            <h2 class="hidden">Товары и услуги</h2>
            
-           <ul class="service">
-               <li class="materials">
+           <div class="service">
+               <div class="materials">
                    <h3>Материалы</h3>
                    <a  class="sliders-button" href="#"><span class="materials-items">на любой вкус</span></a>
-               </li>
-               <li class="tools">
+               </div>
+               <div class="tools">
                    <h3>Инструмент</h3>
                    <a class="sliders-button" href="#"><span class="tools-items">НА ВСЕ СЛУЧАИ</span></a>
-               </li>
-               <li class="equipment">
+               </div>
+               
+               
+               <div class="equipment">
                    <h3>Техника</h3>
                    <a class="sliders-button" href="#"><span class="equipment-items">для стройки</span></a>
-               </li>
-               <li class="discount">
-                   <h3>Скидки 50%</h3>
-                   <a class="sliders-button" href="#"><span class="discount-items">На 350 ТОВАРОВ</span></a>
-               </li>
-               <li class="delivery">
-                   <h3>Доставка</h3>
-                   <a class="sliders-button" href="#"><span class="delivery-items">бесплатно</span></a>
-               </li>
-           </ul>
-           
-           <div class="slider-items">
-           <ul class="sliders-list">
-           <li>
+               </div>
+               
+              <div class="slider">
+          <div class="sliders-item ">
+           <h3 class="slider-header">Дрели</h3>
+         <span class="slider-description ">Соседям на радость!</span>
+            <img src="img/slider-1.2.jpg" alt="Дрели" width="620" height="266">
+              </div>
+               <div class="sliders-item current-slider">
            <h3 class="slider-header">Перфораторы</h3>
          <span class="slider-description">Настоящие мужские игрушки</span>
           <img src="img/slider-1.1.jpg" alt="Перфораторы" width="620" height="266">
-           </li>
-          <li >
-           <h3 class="slider-header">Дрели</h3>
-         <span class="slider-description">Соседям на радость!</span>
-            <img src="img/slider-1.2.jpg" alt="Дрели" width="620" height="266"></li>
-               </ul>
-           <label for="left">
-           <span class="left-arrow">Левая стрелка</span>
-           </label>
-           <label for="right">
-           <span class="right-arrow">Правая стрелка</span>
-           </label>
-           <input type="radio" name="slider-1" id="left" checked> 
-           <input type="radio" name="slider-1" id="right"> 
-           <a href="catalog.html" class="button">ОТКРЫТЬ КАТАЛОГ</a>
+            
            </div>
-           
-       </section>
+                <button class="left-arrow" type="button" aria-label="Левая стрелка"></button>
+           <button class="right-arrow" type="button" aria-label
+           ="Правая стрелка"></button>
+          <a href="catalog.html" class="button">ОТКРЫТЬ КАТАЛОГ</a>
+                 </div>
+             
+               
+                 <div class="discount">
+                   <h3>Скидки 50%</h3>
+                   <a class="sliders-button" href="#"><span class="discount-items">На 350 ТОВАРОВ</span></a>
+               </div>
+              <div class="delivery">
+                   <h3>Доставка</h3>
+                   <a class="sliders-button" href="#"><span class="delivery-items">бесплатно</span></a>
+               </div>
+               </div>
+               </section>
        
        <section class="popular wrapper">
+            <div class="title-wrapper">
            <h2>Популярные товары:</h2>
            <a href="№" class="button">все популярные товары</a>
-           <ul class="catalog-list">
+           </div>
+           <ul class="popular-list">
               
                <li class="catalog-item">
                        <img src="img/goods-10.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
@@ -123,6 +130,7 @@
                        <span class="last-price"><del>32 500 P.</del></span>
                    <span class="current-price"><b>25 500 P.</b></span>
                     </li>
+                    
                     
                <li class="catalog-item">
                       <img src="img/goods-4.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -160,8 +168,10 @@
        </section>
        
        <section class="brands-block wrapper">
+          <div class="title-wrapper">
            <h2>Популярные прозводители:</h2>
            <a href="№" class="button">все производители</a>
+           </div>
            <ul class="brands">
               
                <li class="brands-items">
@@ -220,48 +230,48 @@
        </section>
        
        <section class="services">
+          <div class="wrapper">
            <h2>Сервисы</h2>
-           <p>Хороший интернет-магазин отличается от плохого не только ценами!
+           <p class="advice">Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          
-           <dl class="advantage">
+             <div class="slider2">
+           <ul class="advantage">
               
-               <dt>
-            <input type="radio" name="slider-2" id="delivery" checked>   
-               <label for="delivery"><strong>Доставка</strong></label> 
-               </dt>
-               <dd class="delivery-block"> 
+               <li class="advantage-item">
+            <h3 class="advantage-title current" tabindex="0">Доставка </h3>
+               </li>
+               <li class="advantage-item">
+              <h3 class="advantage-title" tabindex="0" >Гарантия</h3> 
+               </li>           
+               <li class="advantage-item">
+                <h3 class="advantage-title" tabindex="0">Кредит</h3>
+               </li>
+           </ul>
+           <div class="slider-container">  
+              <div class="advantage-block delivery-block current-item"> 
                <span class="advantage-items">Доставка</span>
            <p>Мы с удовольствием доставим ваш товар прямо 
 к вашему подъезду совершенно бесплатно!
 Ведь мы неплохо заработаем, 
 поднимая его на ваш этаж!</p>
-              </dd>
-              
-               <dt>
-               <input type="radio" name="slider-2" id="guarentee"> 
-              <label for="guarentee"><strong>Гарантия</strong></label> 
-              </dt>
-            <dd class="guarantee-block">   
+              </div>
+              <div class="advantage-block guarantee-block hidden-item">   
               <span class="advantage-items">Гарантия</span>
                <p>Если купленный у нас товар поломается или заискрит, 
 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
                    Дом уж восстановите как-нибудь сами.</p>
-                   </dd>
-                   
-               <dt>
-                <input type="radio" name="slider-2" id="credit"> 
-                <label for="credit"><strong>Кредит</strong></label>
-               </dt>
-               <dd class="credit-block">
+                   </div>
+                     <div class="advantage-block credit-block hidden-item">
                    <span class="advantage-items">Кредит</span>
                    <p>
 Залезть в долговую яму стало проще! 
 Кредитные консультанты придут вам на помощь.</p>
              
                <a href="#" class="button"><span>ОТПРАВИТЬ ЗАЯВКУ</span></a>
-                 </dd>
-           </dl>
+                 </div>
+              </div>
+           </div>
+           </div>
        </section>
        
        <section class="technomart-info">
@@ -345,24 +355,41 @@
    </footer>
    
    <section class="pop-up-forms">
-      <h2 class="hddeen">Связаться с нами !</h2>
+        
+      <h2 class="hidden">Связаться с нами !</h2>
        <form action="#" method="post">
-           <label for="name-field">Ваше имя:</label>
+         <div class="pop-up-wrapper">
+            <ul class="form-list">
+            <li class="form-item">
+           <label for="name-field">Ваше имя:</label><br>
            <input type="text" name="text" id="name-field" placeholder="Имя фамилия" required>
-           <label for="email-field">Ваш e-mail:</label>
+           </li>
+           <li class="form-item">
+           <label for="email-field">Ваш e-mail:</label><br>
            <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
-           <span >Текст письма:</span>
+           </li>
+           <li class="form-item">
+           <span >Текст письма:</span><br>
             <!-- вместо cols and rows будет СSS width:460px; height:114; -->
-           <textarea class="pop-up-message" cols="50" rows="10">
+           <textarea class="pop-up-message">
             В свободной форме
            </textarea>
+           </li>
+           </ul>
+           </div>
+           <div class="pop-up-footer">
+           <div class="pop-up-wrapper">
            <button class=" button pop-up-submit" type="submit">Отправить</button>
+           </div>
+           </div>
+           
        </form>
+       
        <button class="button close-pop-up" type="button">Закрыть</button>
    </section>
    
    <section class="pop-up-map">
-       <h2 class="hddeen">Карта</h2>
+       <h2 class="hidden">Карта</h2>
        <p><img src="img/map-big.jpg" alt="Офис компании по алресу ул. Большая Канюшенная 19/8, Санкт-Питербург" width="940" height="446"></p>
        <button class=" button close-pop-up" type="button">Закрыть</button>
    </section>
