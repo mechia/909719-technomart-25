@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
-   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/main.css">
     <title>HTML Academy: Техномарт</title>
@@ -36,7 +36,7 @@
   <div class="wrapper">
   <div class="main-title">
   <h1>Интернет-магазин
-строительных материалов
+строительных материалов<br> 
 и инструментов для ремонта </h1>
      </div>
 <div class="adress">
@@ -71,32 +71,37 @@
            
            <div class="service">
                <div class="service-item materials">
+                   <div class="new-goods"><span class="hidden">новинка</span></div>
                    <h3>Материалы</h3>
-                   <a  class="sliders-button" href="#"><span class="materials-items">на любой вкус</span></a>
+                   <a  class="sliders-button" href="#">на любой вкус</a>
                </div>
                <div class="service-item tools">
                    <h3>Инструмент</h3>
-                   <a class="sliders-button" href="#"><span class="tools-items">НА ВСЕ СЛУЧАИ</span></a>
+                   <a class="sliders-button" href="#">НА ВСЕ СЛУЧАИ</a>
                </div>
                
                
                <div class="service-item equipment">
                    <h3>Техника</h3>
-                   <a class="sliders-button" href="#"><span class="equipment-items">для стройки</span></a>
+                   <a class="sliders-button" href="#">для стройки</a>
                </div>
                
               <div class="service-item slider">
-          <div class="sliders-item ">
+          <div class="sliders-item current-slider">
            <h3 class="slider-header">Дрели</h3>
          <span class="slider-description ">Соседям на радость!</span>
             <img src="img/slider-1.2.jpg" alt="Дрели" width="620" height="266">
               </div>
-               <div class="sliders-item current-slider">
+               <div class="sliders-item">
            <h3 class="slider-header">Перфораторы</h3>
          <span class="slider-description">Настоящие мужские игрушки</span>
           <img src="img/slider-1.1.jpg" alt="Перфораторы" width="620" height="266">
             
            </div>
+               <div class="dots">
+                   <div class="dot"><span>1</span></div>
+                   <div class="dot active"><span>1</span></div>
+               </div>
                 <button class="left-arrow" type="button" aria-label="Левая стрелка"></button>
            <button class="right-arrow" type="button" aria-label
            ="Правая стрелка"></button>
@@ -106,11 +111,11 @@
                   <div class="right-column">
                  <div class="service-item discount">
                    <h3>Скидки 50%</h3>
-                   <a class="sliders-button" href="#"><span class="discount-items">На 350 ТОВАРОВ</span></a>
+                   <a class="sliders-button" href="#">На 350 ТОВАРОВ</a>
                </div>
               <div class="service-item delivery">
                    <h3>Доставка</h3>
-                   <a class="sliders-button" href="#"><span class="delivery-items">бесплатно</span></a>
+                   <a class="sliders-button" href="#">бесплатно</a>
                </div>
                </div>
                </div>
@@ -277,23 +282,27 @@
              
            </ul>
            <div class="slider-container">  
-              <div class="advantage-block delivery-block current-item"> 
+              <div class="advantage-block  current-item">
+              <div class="delivery-block">
+              <span class="hidden">Картирка доставки</span></div> 
                <span class="advantage-items">Доставка</span>
-           <p>Мы с удовольствием доставим ваш товар прямо 
-к вашему подъезду совершенно бесплатно!
-Ведь мы неплохо заработаем, 
+           <p>Мы с удовольствием доставим ваш товар прямо<br> 
+к вашему подъезду совершенно бесплатно!<br>
+Ведь мы неплохо заработаем,<br> 
 поднимая его на ваш этаж!</p>
               </div>
-              <div class="advantage-block guarantee-block hidden-item">   
+              <div class="advantage-block  hidden-item">
+              <div class="guarantee-block">   <span class="hidden">Картирка гарантии</span></div>   
               <span class="advantage-items">Гарантия</span>
-               <p>Если купленный у нас товар поломается или заискрит, 
-а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+               <p>Если купленный у нас товар поломается или заискрит,<br> 
+а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый. <br>
                    Дом уж восстановите как-нибудь сами.</p>
                    </div>
-                     <div class="advantage-block credit-block hidden-item">
+                     <div class="advantage-block  hidden-item">
+                     <div class="credit-block"> <span class="hidden">Картирка кредит</span></div>
                    <span class="advantage-items">Кредит</span>
                    <p>
-Залезть в долговую яму стало проще! 
+Залезть в долговую яму стало проще!<br> 
 Кредитные консультанты придут вам на помощь.</p>
              
                <a href="#" class="button"><span>ОТПРАВИТЬ ЗАЯВКУ</span></a>
@@ -310,8 +319,7 @@
                <h3> КОМПАНИЯ «Техномарт»</h3>
               
  <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-
-     <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+<p>Мы можем доставить ваш товар в самые отдаленные точки России!
      Техномарт работает со многими транспортными компаниями: </p>
     
        <ul class="environment">
@@ -320,7 +328,7 @@
         <li class="environment-list"><strong>ЖелДорЭкспедиция</strong></li>
     </ul>
     
-    <a href="#" class="button"><span>Подробние</span></a>
+    <a href="#" class="button">Подробнее о компании</a>
 	 </section>
           
            <section class="contacts">
