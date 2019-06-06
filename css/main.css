@@ -68,7 +68,9 @@ a {
     flex-wrap: wrap;
 
 }
-
+.search form {
+    height: 42px;
+}
 .search svg {
     position:absolute;
     content: "";
@@ -135,7 +137,6 @@ a {
     
     background-color: #63a63e;
 }
-
 .get-order a:hover,
 .get-order a:focus {
     background-color: #5fbb2d;
@@ -158,7 +159,8 @@ a {
 .flags,
 .user-basket,
 .get-order  {
- width: 150px;
+ min-width: 150px;
+    
     
 }
 .flags a,
@@ -543,6 +545,7 @@ a {
     flex-wrap: wrap;
    
     margin-bottom: 50px;
+    margin-right: -20px;
 
 } .service-item {
     width:300px;
@@ -562,9 +565,7 @@ a {
     color:#ffffff;
     
 }
-.service-item:nth-child(3n) {
-    margin-right: 0;
-}
+
 .right-column {
     margin: 0;
  display: flex;
@@ -684,24 +685,35 @@ a {
 position: relative;
     
 }
-
+.sliders-item .slider-wrapper {
+    position: relative;
+    width: 570px;
+    height: 219px;
+    padding: 22px 25px 25px 25px;
+}
+.slider-wrapper img {
+    position: absolute;
+    top:0;
+    left:0;
+    width:620px;
+    height: 266px;
+}
 .slider .sliders-item {
     margin-top: 0;
     position: absolute;
     width:auto;
 }
-.sliders-item .slider-header {
+.slider-wrapper .slider-header {
     position: absolute;
-    top:3px;
-    left:5px;
+    margin: 0;
     font-size:36px;
     line-height: 36px;
 }
 .slider-description {
     position: absolute;
-    top:60px;
-    left:25px;
+    margin-top: 35px;
 }
+
 .left-arrow {
     position: absolute;
     border: 0;
@@ -738,7 +750,6 @@ position: relative;
     
   position: absolute;
   width:40px;   
-  z-index: 5;
  bottom: 30px;
  left:295px;  
     
@@ -747,6 +758,7 @@ position: relative;
     visibility: hidden;
 }
 .dot {
+    vertical-align: top;
     display: inline-block;
     cursor: pointer;
     width: 10px;
@@ -835,14 +847,14 @@ position: relative;
     text-transform: uppercase;
     color:#ffffff;
     
-    background-color: rgba(0, 0, 0, .1);
+  
 }
 .slider-description {
     font-size: 18px;
     line-height: 24px;
      color:#ffffff;
     
-    background-color: rgba(0, 0, 0, .1);
+
 }
 
 
@@ -1655,6 +1667,10 @@ position: relative;
     line-height: 20px;
     text-transform: none;
 }
+.catalog-item img {
+    width: 218px;
+    height: 170px;
+}
 .catalog-item {
     position: relative;
     display: flex;
@@ -2040,24 +2056,26 @@ background-color: #32425c;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    
     
 }
 .copyright .footer-copyright:nth-child(2n) {
     width: 100px;
-    
+    margin-right: -20px;
 
 }
-.footer-copyright {
+ .footer-copyright {
     display: block;
     width:140px;
-    
+    margin-right: 50px;
     font-size: 16px;
     line-height: 18px;
     
     
 }
 .footer-copyright  a {
+     font-size: 16px;
+    line-height: 18px;
     color:#ffd180;
     text-transform: none;
     
