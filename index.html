@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/main.css">
     <title>HTML Academy: Техномарт</title>
@@ -16,7 +17,7 @@
  <div class="top-header">
      <div class="wrapper">
   <a href="#" class="main-header-logo">
-  <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»" width="108" height="18"></a>
+  <img src="img/logo.svg" alt="Логотип интернет-магазина «ТЕХНОМАРТ»" width="109" height="19"></a>
   <div class="tools-bar">
 <div class="search">
      <label class="hidden" for="search">Поиск</label>
@@ -25,9 +26,10 @@
       <input type="search" name="search" id="search" placeholder="Поиск:"></form>
      </div>   
      <div class="user-option">
- <span class="flags"><a href="#"> Закладки: 0</a></span>  
- <span class="user-basket"><a href="#">Корзина: 0</a></span>
- <span class="get-order"><a href="#">Оформить заказ</a></span>    
+     <a class="flags" href="#">Закладки: 0</a>  
+     <a class="user-basket" href="#">Корзина: 0</a>
+     <a class="get-order" href="#">Оформить заказ</a>  
+    
   </div>
   </div>
   </div>
@@ -40,8 +42,8 @@
 и инструментов для ремонта </h1>
      </div>
 <div class="adress">
-      <a href="tel:+7 (812) 555-05-55" class="phone">+7 (812) 555-05-55<br></a>
-      <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress></div>
+      <a href="tel:+7(812)555-05-55" class="phone">+7 (812) 555-05-55<br></a>
+      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address></div>
       <div class="data">
       <ul class="user-data">
           <li class="entrance"><a href="#">
@@ -49,7 +51,6 @@
           <li class="checkin"><a href="#">Регистрация</a></li>
       </ul>
       </div>
-      
       <nav class="main-navigation">
           <ul>
               <li><a>Главная</a></li>
@@ -217,54 +218,54 @@
            </div>
            <ul class="brands">
               
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a class="brands-items" href="#">
                        <img src="img/brands-1.png" alt="BOSH" width="126" height="37">
                        <h3 class="hidden">BOSH</h3>
                    </a>
                    </li>
                    
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a class="brands-items" href="#">
                        <img src="img/brands-2.png" alt="Makita" width="123" height="40">
                        <h3 class="hidden">Makita</h3>
                    </a>
                    </li>
                    
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a  class="brands-items" href="#">
                        <img src="img/brands-3.png" alt="dewalt" width="146" height="44">
                        <h3 class="hidden">dewalt</h3>
                    </a>
                    </li>
                    
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a class="brands-items" href="#">
                        <img src="img/brands-4.png" alt="ИНЕРСКОЛ" width="200" height="88">
                        <h3 class="hidden">иНТЕРСКОЛ</h3>
                    </a>
                    </li>
                    
-               <li class="brands-items">
-                      <a href="#">
+               <li >
+                      <a class="brands-items" href="#">
                        <img src="img/brands-5.png" alt="HITACHI" width="169" height="31">
                        <h3 class="hidden">HITACHI</h3>
                    </a>
                    </li>
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a class="brands-items" href="#">
                        <img src="img/brands-6.png" alt="LG" width="121" height="73">
                        <h3 class="hidden">LG</h3>
                    </a>
                     </li>
-                     <li class="brands-items">
-                      <a href="#">
+                     <li >
+                      <a class="brands-items" href="#">
                        <img src="img/brands-7.png" alt="AEG" width="151" height="96">
                        <h3 class="hidden">AEG</h3>
                    </a>
                    </li>
-               <li class="brands-items">
-                      <a href="#">
+               <li>
+                      <a class="brands-items" href="#">
                        <img src="img/brands-8.png" alt="metabo" width="204" height="69">
                        <h3 class="hidden">metabo</h3>
                    </a>
@@ -410,14 +411,14 @@
       </p>
       <p class="footer-copyright">
        Разработано - 
-        <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
       </div>
        </div>
        </div>
    </footer>
    
-   <section class="pop-up-forms">
+   <section class="modal pop-up-forms">
         
       <h2 class="hidden">Связаться с нами !</h2>
        <form action="#" method="post">
@@ -450,7 +451,7 @@
         <span class="hidden">Закрыть</span></button>
    </section>
    
-   <section class="pop-up-map">
+   <section class="modal pop-up-map">
        <h2 class="hidden">Карта</h2>
        <p><img src="img/map-big.jpg" alt="Офис компании по алресу ул. Большая Канюшенная 19/8, Санкт-Питербург" width="940" height="446"></p>
       <button class="button close-pop-up" type="button">

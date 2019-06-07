@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>HTML Academy: Техномарт</title>
@@ -25,9 +26,9 @@
      
      </form>
      </div>   
-     <span class="flags"><a href="#"> Закладки: 0</a></span>  
-     <span class="user-basket"><a href="#">Корзина: 10</a></span>
-     <span class="get-order"><a href="#">Оформить заказ</a></span>
+     <a class="flags" href="#"> Закладки: 0</a>  
+     <a class="user-basket full" href="#">Корзина: 10</a>
+     <a class="get-order" href="#">Оформить заказ</a>
   </div>
   </div>
   </div>
@@ -39,8 +40,8 @@
 и инструментов для ремонта </h1>
      </div>
       <div class="adress">
-      <a href="tel:+7 (812) 555-05-55" class="phone">+7 (812) 555-05-55<br></a>
-      <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress></div>
+      <a href="tel:+7(812)555-05-55" class="phone">+7 (812) 555-05-55<br></a>
+      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address></div>
       <div class="data">
      <a href="#"><span class="current-user">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
@@ -61,6 +62,7 @@
               <li><a href="#">Спецпредложения</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
+              
           </ul>
       </nav>
      </div>
@@ -77,7 +79,7 @@
         <li class="breadcrumbs-item"><a href="catalog.html">
        Каталог</a></li>
          <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
-        <li class="breadcrumbs-item current-breadcrumbs"><a>Перфораторы</a></li>
+        <li class="current-breadcrumbs"><a>Перфораторы</a></li>
       </ul>
     <h2>Перфораторы</h2>
      <div class="catalog-column">
@@ -140,7 +142,7 @@
                  <td class="td-price"><a href="#">ПО ЦЕНЕ</a></td>
                  <td class="td-type"><a href="#">ПО ТИПУ</a></td>
                  <td class="td-func"><a href="#">ПО ФУНКЦИОНАЛУ</a></td>
-                 <td class="td-control"><a  class="arrow-up" href="#" aira-label="стрелка вверх">
+                 <td class="td-control"><a  class="arrow-up" href="#" aria-label="стрелка вверх">
                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                  </a>
                <a class="arrow-down" href="#" aria-label="стрелка вниз">
@@ -369,12 +371,12 @@
         <a class="button" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <p class="footer-copyright">
        Разработано - 
-          <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
        </div>
        </div>
    </footer>
-  <section class="shopping">
+  <section class="modal shopping">
        <div class="shop-header">
       <h2 class="shop-pop-up">Товар добавлен в карзину!</h2>
       </div>
