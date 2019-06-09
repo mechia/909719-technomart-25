@@ -350,8 +350,8 @@
                <h3>Контакты</h3>
                <p>Вы можете забрать товар сами, 
                  заехав в наш офис:</p>
-                 <img src=img/map-small.jpg width="300" height="158" alt="Навигация">
-               <a class="button" href="#"> <span>Заблудились? НапиШИТЕ НАМ!</span></a> 
+               <a href="#" class="contacts-button-map"><img src=img/map-small.jpg width="300" height="158" alt="Навигация"></a>
+               <a class="button button-form" href="#"> <span>Заблудились? НапиШИТЕ НАМ!</span></a> 
               
            </section>  
             </div>     
@@ -421,20 +421,20 @@
    <section class="modal pop-up-forms">
         
       <h2 class="hidden">Связаться с нами !</h2>
-       <form action="#" method="post">
+       <form class="form" action="#" method="post">
          <div class="pop-up-wrapper">
             <ul class="form-list">
             <li class="form-item">
            <label for="name-field">Ваше имя:</label>
-           <input type="text" name="text" id="name-field" placeholder="Имя фамилия" required>
+           <input type="text" name="text" id="name-field" placeholder="Имя фамилия">
            </li>
            <li class="form-item">
            <label for="email-field">Ваш e-mail:</label>
-           <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+           <input type="email" name="email" id="email-field" placeholder="email@example.com">
            </li>
            <li class="form-item">
            <span >Текст письма:</span>
-           <textarea class="pop-up-message">В свободной форме</textarea>
+           <textarea class="pop-up-message" placeholder="В свободной форме"></textarea>
            </li>
            </ul>
            </div>
@@ -453,10 +453,12 @@
    
    <section class="modal pop-up-map">
        <h2 class="hidden">Карта</h2>
+        <iframe src="https://yandex.by/map-widget/v1/-/CCGFfS5F" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
        <p><img src="img/map-big.jpg" alt="Офис компании по алресу ул. Большая Канюшенная 19/8, Санкт-Питербург" width="940" height="446"></p>
       <button class="button close-pop-up" type="button">
        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
         <span class="hidden">Закрыть</span></button>
    </section>
+   <script src="js/main.js"></script>
   </body>
 </html>
