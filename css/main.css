@@ -523,6 +523,15 @@ a {
 .current-user-data a:active {
  color:rgba(50, 66, 92, .3);    
 }
+.current-user-login {
+	font: inherit;
+	color:#000000;
+}
+.user-entrance {
+	position: absolute;
+	right: 45px;
+	top:0px;
+}
 .current-user:active {
     color:rgba(0, 0, 0, .3);
 }
@@ -2202,7 +2211,7 @@ list-style: none;
 .form-item textarea::-moz-placeholder {
     font:inherit;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 38px;
    
     color:#a9a9a9;
     opacity: 1;
@@ -2296,7 +2305,7 @@ border: 1px solid transparent;
     position: relative;
     top:0;
     left:0;
-    
+    border: 1px;
     z-index: 2;
 }
 .pop-up-map {
@@ -2327,9 +2336,9 @@ border: 1px solid transparent;
 }
 .shopping {
     display: none;
-    
     top:400px;
     left:650px;
+	
     width: 620px;
     height: 282px;
     margin: 0 auto;
@@ -2489,7 +2498,6 @@ box-shadow: 0 20px 40px rgba(41,52,73,.75),
   animation: shake 0.6s;
 }
 /*POP-UP SECTION ENDING*/
-
 
 
 

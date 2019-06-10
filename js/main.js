@@ -1,3 +1,5 @@
+
+
 var link = document.querySelector(".button-form");
   
   var popup = document.querySelector(".pop-up-forms");
@@ -75,9 +77,7 @@ var link = document.querySelector(".button-form");
   });
  
 var mapLink = document.querySelector(".contacts-button-map");
-console.log(mapLink);
   var mapPopup = document.querySelector(".pop-up-map");
-console.log(mapPopup);
   var mapClose = mapPopup.querySelector(".close-pop-up");
   
   mapLink.addEventListener("click", function (evt) {
@@ -89,5 +89,7 @@ console.log(mapPopup);
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
   });
+  
+
 
  
