@@ -1,5 +1,5 @@
 var shop = document.querySelector('.shopping');
-var list = document.querySelector(".catalog-list");
+var list = document.querySelector('.catalog-list');
 var item = list.querySelectorAll('.catalog-item');
 var closeShop = shop.querySelector('.close-pop-up');
 
@@ -12,9 +12,9 @@ var buy = item.querySelector('.buy');
 	});
 }; 
 
-closeShop.addEventListener("click", function (evt) {
+closeShop.addEventListener('click', function (evt) {
     evt.preventDefault();
-    shop.classList.remove("modal-show");
+    shop.classList.remove('modal-show');
   });
   
 

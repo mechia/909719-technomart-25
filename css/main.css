@@ -1065,7 +1065,9 @@ position: relative;
     border-bottom: 2px solid #405069;
     
 }
-
+.advantage-item:last-child {
+	border-bottom: none;
+}
 .advantage-title {
     margin: 0;
     padding: 0;
@@ -1080,6 +1082,7 @@ position: relative;
     color: #ffffff;
     background-color: #32425c;
 }
+
 .current {
     margin: 0;
     padding: 0;
@@ -1102,15 +1105,14 @@ position: relative;
     width:620px;
     top:0;
     left: 0;
+	z-index: -1;
 }
 .advantage-block p {
     font-family: "PT Sans", Arial, sans-serif;
     width:380px;
     margin-bottom: 20px;
 }
-.hidden-item {
-    z-index: -1;
-}
+
 .advantage-items {
     font-size: 36px;
     line-height: 36px;
@@ -1626,6 +1628,7 @@ position: relative;
 
 .sort a {
     display: inline-block;
+	vertical-align: middle;
     color:rgba(0, 0, 0, .3);
     text-decoration: underline;
     text-decoration-color: #ee3643;
@@ -1693,7 +1696,7 @@ position: relative;
     padding: 0;
      
     width:160px;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
